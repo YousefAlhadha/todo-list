@@ -1,4 +1,4 @@
-# 📝 To-Do List App (Vanilla JavaScript)
+# 📝 To-Do List App
 
 A modern, responsive **To-Do List web application** built with **HTML, CSS, and Vanilla JavaScript**, focused on clean UI/UX, state management, and real-world front-end practices — without relying on frameworks.
 
@@ -34,13 +34,13 @@ This project demonstrates strong fundamentals in **DOM manipulation**, **applica
 | Technology | Usage |
 |----------|------|
 | HTML5 | Semantic structure |
-| CSS3 | Layout, animations, dark mode |
+| CSS3 | Layout, animations |
 | JavaScript (ES6) | Logic, events, state |
 | LocalStorage API | Data persistence |
 
 ---
 
-## 🧩 How It Works (High Level)
+## 🧩 How It Works 
 
 1. User adds a task → task stored in a JS array
 2. Array syncs to **LocalStorage**
