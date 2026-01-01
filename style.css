@@ -1,0 +1,191 @@
+/* ---------- RESET ---------- */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* ---------- THEME ---------- */
+:root {
+  --bg: #f2f4f8;
+  --card: #ffffff;
+  --text: #1a1a1a;
+  --muted: #6b7280;
+  --primary: #4f46e5;
+  --danger: #ef4444;
+  --border: #e5e7eb;
+}
+
+body.dark {
+  --bg: #0f172a;
+  --card: #1e293b;
+  --text: #f8fafc;
+  --muted: #94a3b8;
+  --border: #334155;
+}
+
+/* ---------- BODY ---------- */
+body {
+  font-family: "Inter", system-ui, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  min-height: 100vh;
+  padding: 40px 16px;
+}
+
+
+/* ---------- CONTAINER ---------- */
+.container {
+  background: var(--card);
+  width: 100%;
+  max-width: 450px;
+  padding: 24px;
+  border-radius: 18px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+  margin: 0 auto;
+}
+
+/* ---------- HEADER ---------- */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+header h1 {
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+#toggleDark {
+  background: none;
+  border: none;
+  font-size: 1.4rem;
+  cursor: pointer;
+}
+
+/* ---------- INPUT ROW (FIXED) ---------- */
+.input-box {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 24px;
+  align-items: center;
+}
+
+#taskInput {
+  flex: 1;
+}
+
+#dateInput {
+  width: 140px;
+}
+
+.input-box input,
+.input-box button {
+  height: 44px;
+  padding: 0 12px;
+  border-radius: 10px;
+  font-size: 0.9rem;
+}
+
+.input-box input {
+  border: 1px solid var(--border);
+}
+
+#addBtn {
+  background: var(--primary);
+  color: white;
+  border: none;
+  padding: 0 16px;
+  white-space: nowrap;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* ---------- TASK LIST ---------- */
+ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+/* ---------- TASK CARD ---------- */
+li {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 16px;
+  cursor: grab;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+li:hover {
+  box-shadow: 0 12px 24px rgba(0,0,0,0.06);
+}
+
+li.completed strong {
+  text-decoration: line-through;
+  color: var(--muted);
+}
+
+/* ---------- TASK CONTENT ---------- */
+li strong {
+  display: block;
+  font-size: 1rem;
+  margin-bottom: 6px;
+}
+
+li small {
+  color: var(--muted);
+  font-size: 0.8rem;
+}
+
+/* ---------- ACTION BUTTONS ---------- */
+.task-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 14px;
+}
+
+.task-actions button {
+  flex: 1;
+  height: 36px;
+  border-radius: 10px;
+  border: none;
+  background: #f1f5f9;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.task-actions button:last-child {
+  background: #fee2e2;
+  color: var(--danger);
+}
+
+/* ---------- DRAG STATES ---------- */
+li.dragging {
+  opacity: 0.6;
+  transform: scale(1.03);
+}
+
+li.over {
+  transform: translateY(6px);
+}
+
+/* ---------- MOBILE ---------- */
+@media (max-width: 480px) {
+  .input-box {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  #dateInput {
+    width: 100%;
+  }
+
+  #addBtn {
+    width: 100%;
+  }
+}
