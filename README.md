@@ -6,17 +6,6 @@ This project demonstrates strong fundamentals in **DOM manipulation**, **applica
 
 ---
 
-## 📸 Preview
-![To-Do App Screenshot](Screenshot.png)
-
----
-
-## 🚀 Live Demo
-
-[Live Demo](https://yousefalhadha.github.io/todo-list/)
-
----
-
 ## ✨ Key Features
 
 - ➕ Create, edit, and delete tasks
@@ -29,6 +18,16 @@ This project demonstrates strong fundamentals in **DOM manipulation**, **applica
 
 ---
 
+## 📸 Preview
+![To-Do App Screenshot](Screenshot.png)
+
+---
+
+## 🚀 Live Demo
+
+[Live Demo](https://yousefalhadha.github.io/todo-list/)
+
+---
 
 ## 🛠️ Tech Stack
 
