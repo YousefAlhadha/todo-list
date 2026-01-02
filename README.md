@@ -6,13 +6,14 @@ This project demonstrates strong fundamentals in **DOM manipulation**, **applica
 
 ---
 
-## 🚀 Live Demo
-🔗 https://yousefalhadha.github.io/todo-list/
+## 📸 Preview
+![To-Do App Screenshot](Screenshot.png)
 
 ---
 
-## 📸 Preview
-![To-Do App Screenshot](Screenshot.png)
+## 🚀 Live Demo
+
+[Live Demo](https://yousefalhadha.github.io/todo-list/)
 
 ---
 
