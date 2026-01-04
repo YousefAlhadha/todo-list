@@ -7,13 +7,13 @@
 
 /* ---------- THEME ---------- */
 :root {
-  --bg: #f2f4f8;
-  --card: #ffffff;
+  --bg: #1f195cd9;
+  --card: #ffffffdc;
   --text: #1a1a1a;
   --muted: #6b7280;
-  --primary: #4f46e5;
+  --primary: #1f195cd9;
   --danger: #ef4444;
-  --border: #e5e7eb;
+  --border: #ffffff;
 }
 
 body.dark {
@@ -122,7 +122,7 @@ li {
 }
 
 li:hover {
-  box-shadow: 0 12px 24px rgba(0,0,0,0.06);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.163);
 }
 
 li.completed strong {
@@ -154,13 +154,13 @@ li small {
   height: 36px;
   border-radius: 10px;
   border: none;
-  background: #f1f5f9;
+  background: #d5d5d5;
   cursor: pointer;
   font-size: 0.9rem;
 }
 
 .task-actions button:last-child {
-  background: #fee2e2;
+  background: #dec6c6;
   color: var(--danger);
 }
 
